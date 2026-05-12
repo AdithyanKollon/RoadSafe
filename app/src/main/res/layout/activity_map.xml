@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0D1B3E">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0D1B3E"
+        android:title="Pothole Map"
+        android:titleTextColor="#FFFFFF"
+        android:elevation="0dp"/>
+
+    <!-- Severity Filter Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#1A2F5E"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp">
+
+        <Button
+            android:id="@+id/btnFilterAll"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="All"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:backgroundTint="#1565C0"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="4dp"/>
+
+        <Button
+            android:id="@+id/btnFilterLow"
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="#37474F"
+            android:text="Low"
+            android:textAllCaps="false"
+            android:textColor="#B0BEC5"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnFilterMedium"
+            android:layout_width="32dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="#37474F"
+            android:text="Medium"
+            android:textAllCaps="false"
+            android:textColor="#B0BEC5"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnFilterHigh"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="High"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:backgroundTint="#37474F"
+            android:textColor="#B0BEC5"/>
+    </LinearLayout>
+
+    <!-- Map -->
+    <org.osmdroid.views.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Bottom panel -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:elevation="16dp">
+
+        <!-- Handle + label -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="0dp">
+
+            <View
+                android:layout_width="36dp"
+                android:layout_height="4dp"
+                android:background="#DDDDDD"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="NEARBY REPORTS"
+                    android:textSize="10sp"
+                    android:textColor="#888888"
+                    android:letterSpacing="0.12"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Long press to show status"
+                    android:textSize="10sp"
+                    android:textColor="#BBBBBB"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"/>
+        </LinearLayout>
+
+        <!-- Pothole list -->
+        <ListView
+            android:id="@+id/listPotholes"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:divider="#F0F0F0"
+            android:dividerHeight="1dp"
+            android:scrollbarStyle="insideOverlay"/>
+    </LinearLayout>
+</LinearLayout>

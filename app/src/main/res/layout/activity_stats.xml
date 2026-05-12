@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0D1B3E">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0D1B3E"
+        android:title="Analytics"
+        android:titleTextColor="#FFFFFF"
+        android:elevation="0dp"/>
+
+    <!-- Hero section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="16dp"
+        android:background="#0D1B3E">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Overview"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All reported potholes at a glance"
+            android:textSize="13sp"
+            android:textColor="#5C7BBF"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Student strip -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="#1A2F5E"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="23BIT0022 K Adithyan"
+                android:textSize="12sp"
+                android:textColor="#90CAF9"
+                android:textStyle="bold"
+                android:letterSpacing="0.03"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  ·  "
+                android:textSize="12sp"
+                android:textColor="#3A5080"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SLOT — G2 + TG2"
+                android:textSize="12sp"
+                android:textColor="#5C7BBF"
+                android:letterSpacing="0.03"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Tab strip -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1A2F5E"
+        app:tabSelectedTextColor="#FFFFFF"
+        app:tabTextColor="#5C7BBF"
+        app:tabIndicatorColor="#90CAF9"
+        app:tabIndicatorHeight="3dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+    <!-- Pager -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F0F2F8"/>
+
+</LinearLayout>

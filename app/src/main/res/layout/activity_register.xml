@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D1B3E"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ── Hero Header ── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="48dp"
+            android:paddingBottom="40dp"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:background="#0D1B3E">
+
+            <!-- Student strip -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="24dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="23BIT0022 K Adithyan"
+                    android:textSize="12sp"
+                    android:textColor="#5C7BBF"
+                    android:letterSpacing="0.04"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  ·  "
+                    android:textSize="12sp"
+                    android:textColor="#3A5080"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SLOT — G2 + TG2"
+                    android:textSize="12sp"
+                    android:textColor="#5C7BBF"
+                    android:letterSpacing="0.04"/>
+            </LinearLayout>
+
+            <!-- App name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RoadSafe"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:letterSpacing="0.04"
+                android:layout_marginBottom="6dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create your account"
+                android:textSize="14sp"
+                android:textColor="#5C7BBF"
+                android:letterSpacing="0.02"/>
+        </LinearLayout>
+
+        <!-- ── White Card ── -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:elevation="12dp"
+            android:paddingStart="28dp"
+            android:paddingEnd="28dp"
+            android:paddingTop="28dp"
+            android:paddingBottom="32dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="-20dp"
+            android:layout_marginBottom="32dp">
+
+            <!-- Card title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Join RoadSafe"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#0D1B3E"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fill in your details to get started"
+                android:textSize="13sp"
+                android:textColor="#AAAAAA"
+                android:layout_marginBottom="28dp"/>
+
+            <!-- Full Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FULL NAME"
+                android:textSize="10sp"
+                android:textColor="#888888"
+                android:letterSpacing="0.12"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/etRegName"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Your full name"
+                android:inputType="textPersonName"
+                android:background="@android:color/transparent"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textSize="15sp"
+                android:textColor="#212121"
+                android:backgroundTint="#1565C0"/>
+
+            <TextView
+                android:id="@+id/tvNameError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#C62828"
+                android:visibility="gone"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Email -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EMAIL"
+                android:textSize="10sp"
+                android:textColor="#888888"
+                android:letterSpacing="0.12"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/etRegEmail"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="you@example.com"
+                android:inputType="textEmailAddress"
+                android:background="@android:color/transparent"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textSize="15sp"
+                android:textColor="#212121"
+                android:backgroundTint="#1565C0"/>
+
+            <TextView
+                android:id="@+id/tvRegEmailError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#C62828"
+                android:visibility="gone"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Password -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PASSWORD"
+                android:textSize="10sp"
+                android:textColor="#888888"
+                android:letterSpacing="0.12"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/etRegPassword"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Min 6 characters"
+                android:inputType="textPassword"
+                android:background="@android:color/transparent"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textSize="15sp"
+                android:textColor="#212121"
+                android:backgroundTint="#1565C0"/>
+
+            <!-- Password strength bar -->
+            <TextView
+                android:id="@+id/tvPasswordStrength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:id="@+id/tvRegPasswordError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#C62828"
+                android:visibility="gone"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Confirm Password -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CONFIRM PASSWORD"
+                android:textSize="10sp"
+                android:textColor="#888888"
+                android:letterSpacing="0.12"
+                android:layout_marginBottom="6dp"/>
+
+            <EditText
+                android:id="@+id/etRegConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:hint="Re-enter password"
+                android:inputType="textPassword"
+                android:background="@android:color/transparent"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:textSize="15sp"
+                android:textColor="#212121"
+                android:backgroundTint="#1565C0"/>
+
+            <TextView
+                android:id="@+id/tvConfirmPasswordError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="#C62828"
+                android:visibility="gone"
+                android:layout_marginBottom="28dp"/>
+
+            <!-- Register button -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="20dp">
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:text="Create Account"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:backgroundTint="#1565C0"
+                    android:textColor="#FFFFFF"
+                    android:elevation="4dp"/>
+
+                <ProgressBar
+                    android:id="@+id/progressRegister"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:indeterminateTint="#FFFFFF"
+                    android:visibility="gone"/>
+            </FrameLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#EEEEEE"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Login link -->
+            <TextView
+                android:id="@+id/tvLoginLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account? Login"
+                android:textColor="#1565C0"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

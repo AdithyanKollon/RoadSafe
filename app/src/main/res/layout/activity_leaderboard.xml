@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0D1B3E">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0D1B3E"
+        android:title="Leaderboard"
+        android:titleTextColor="#FFFFFF"
+        android:elevation="0dp"/>
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingTop="12dp"
+        android:paddingBottom="28dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:background="#0D1B3E">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🏆"
+            android:textSize="40sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Top Reporters"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Earn 10 pts per report · 5 pts per resolve"
+            android:textSize="12sp"
+            android:textColor="#5C7BBF"/>
+    </LinearLayout>
+
+    <!-- List -->
+    <ListView
+        android:id="@+id/listLeaderboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0F2F8"
+        android:divider="#EEEEEE"
+        android:dividerHeight="1dp"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"/>
+</LinearLayout>

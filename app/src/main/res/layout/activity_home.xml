@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D1B3E"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- ══════════════════════════════════════════════════════
+             HERO HEADER  — deep navy gradient feel
+             ══════════════════════════════════════════════════════ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:paddingTop="48dp"
+            android:paddingBottom="36dp"
+            android:background="#0D1B3E">
+
+            <!-- App brand row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="24dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RoadSafe"
+                        android:textSize="36sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:letterSpacing="0.04"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Smart Pothole Reporting"
+                        android:textSize="12sp"
+                        android:textColor="#5C7BBF"
+                        android:letterSpacing="0.06"/>
+                </LinearLayout>
+
+                <!-- Points Badge -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="#1A2F5E"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:elevation="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="⭐ MY POINTS"
+                        android:textSize="9sp"
+                        android:textColor="#90CAF9"
+                        android:letterSpacing="0.1"
+                        android:layout_marginBottom="2dp"/>
+
+                    <TextView
+                        android:id="@+id/tvPoints"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 pts"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFD54F"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Profile row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="#1A2F5E"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:elevation="3dp"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/imgProfile"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/my_photo"
+                    android:scaleType="centerCrop"
+                    android:background="#0D1B3E"
+                    android:elevation="2dp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="14dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="23BIT0022 K Adithyan"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:layout_marginBottom="2dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SLOT — G2 + TG2"
+                        android:textSize="11sp"
+                        android:textColor="#5C7BBF"
+                        android:letterSpacing="0.04"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Welcome text -->
+            <TextView
+                android:id="@+id/tvWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#E8EEF9"/>
+        </LinearLayout>
+
+        <!-- ══════════════════════════════════════════════════════
+             CONTENT CARD AREA  — white rounded sheet
+             ══════════════════════════════════════════════════════ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#F0F2F8"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="28dp"
+            android:paddingBottom="32dp">
+
+            <!-- ══ Risk Level Banner ══ -->
+            <LinearLayout
+                android:id="@+id/riskBannerContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="#2E7D32"
+                android:elevation="4dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="RISK LEVEL"
+                    android:textSize="10sp"
+                    android:textColor="#FFFFFF"
+                    android:letterSpacing="0.12"
+                    android:alpha="0.8"/>
+
+                <TextView
+                    android:id="@+id/tvRiskBanner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOW"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"/>
+            </LinearLayout>
+
+            <!-- ══ Pending / Resolved Row ══ -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="16dp">
+
+                <!-- Pending tile -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="#E65100"
+                    android:elevation="4dp"
+                    android:padding="16dp"
+                    android:layout_marginEnd="6dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PENDING"
+                        android:textSize="9sp"
+                        android:textColor="#FFFFFF"
+                        android:alpha="0.8"
+                        android:letterSpacing="0.1"
+                        android:layout_marginBottom="4dp"/>
+
+                    <TextView
+                        android:id="@+id/tvPending"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="28sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+
+                <!-- Resolved tile -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="#2E7D32"
+                    android:elevation="4dp"
+                    android:padding="16dp"
+                    android:layout_marginStart="6dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RESOLVED"
+                        android:textSize="9sp"
+                        android:textColor="#FFFFFF"
+                        android:alpha="0.8"
+                        android:letterSpacing="0.1"
+                        android:layout_marginBottom="4dp"/>
+
+                    <TextView
+                        android:id="@+id/tvResolved"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:textSize="28sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Section label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QUICK ACTIONS"
+                android:textSize="10sp"
+                android:textColor="#888888"
+                android:letterSpacing="0.15"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Capture -->
+            <Button
+                android:id="@+id/btnCapture"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:text="  Capture Pothole"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:backgroundTint="#1565C0"
+                android:textColor="#FFFFFF"
+                android:elevation="6dp"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- Analytics -->
+            <Button
+                android:id="@+id/btnStats"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:text="  View Analytics"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:backgroundTint="#4A148C"
+                android:textColor="#FFFFFF"
+                android:elevation="6dp"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- Map -->
+            <Button
+                android:id="@+id/btnViewMap"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:text="  View Potholes on Map"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:backgroundTint="#1B5E20"
+                android:textColor="#FFFFFF"
+                android:elevation="6dp"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- Leaderboard -->
+            <Button
+                android:id="@+id/btnLeaderboard"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:text="  Leaderboard"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:backgroundTint="#E65100"
+                android:textColor="#FFFFFF"
+                android:elevation="6dp"
+                android:layout_marginBottom="28dp"/>
+
+            <!-- Section label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="QUICK STATS"
+                android:textSize="10sp"
+                android:textColor="#888888"
+                android:letterSpacing="0.15"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Stats tiles row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <!-- Total tile -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="#0D1B3E"
+                    android:elevation="6dp"
+                    android:padding="20dp"
+                    android:layout_marginEnd="6dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TOTAL"
+                        android:textSize="10sp"
+                        android:textColor="#5C7BBF"
+                        android:letterSpacing="0.12"
+                        android:layout_marginBottom="6dp"/>
+
+                    <TextView
+                        android:id="@+id/tvTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="34sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="potholes"
+                        android:textSize="11sp"
+                        android:textColor="#5C7BBF"/>
+                </LinearLayout>
+
+                <!-- Avg tile -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="#1B3A1E"
+                    android:elevation="6dp"
+                    android:padding="20dp"
+                    android:layout_marginStart="6dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AVG SEVERITY"
+                        android:textSize="10sp"
+                        android:textColor="#66BB6A"
+                        android:letterSpacing="0.12"
+                        android:layout_marginBottom="6dp"/>
+
+                    <TextView
+                        android:id="@+id/tvAverage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="34sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="out of 3.0"
+                        android:textSize="11sp"
+                        android:textColor="#66BB6A"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

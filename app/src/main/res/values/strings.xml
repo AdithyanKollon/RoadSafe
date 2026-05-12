@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Roadsafe</string>
+    <string-array name="severity_levels">
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "348719071940",
+    "project_id": "roadsafe-f49b7",
+    "storage_bucket": "roadsafe-f49b7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348719071940:android:056ccae0e2f132a697bf91",
+        "android_client_info": {
+          "package_name": "com.example.roadsafe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAZVAtz3KVdVS-QI1dGC3w-ms6XOguIkVo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
